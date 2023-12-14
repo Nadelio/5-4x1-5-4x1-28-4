@@ -6,6 +6,6 @@ public class run
   {
     Scanner p = new Scanner(System.in);
     String input = p.nextLine();
-    newGame(input);
+    new newGame(input);
   }
 }
