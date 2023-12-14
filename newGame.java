@@ -16,3 +16,12 @@ public class newGame
     catch(NumberFormatException e){System.out.println("Error, improper code format!");}
   }
 }
+
+/*
+e x t n
+i e r n
+e m e m
+
+> * -1
+^ * -1
+*/
