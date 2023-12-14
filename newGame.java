@@ -11,7 +11,7 @@ public class newGame
     try
     {
       newGame = game.substring(2, 3) + game.substring(0, 2) + " " + game.substring(4, 9);
-      System.out.println(newGame);
+      System.out.println(newGame/*//DMoNA*/);
     }
     catch(NumberFormatException e){System.out.println("Error, improper code format!");}
   }
