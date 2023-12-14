@@ -1,11 +1,13 @@
-import newGame;
+import java.util.Scanner;
 
 public class run
 {
   public static void main(String [] args)
   {
-    Scanner p = new Scanner(System.in);
-    String input = p.nextLine();
-    new newGame(input);
+    try (Scanner p = new Scanner(System.in))
+    {
+      String input = p.nextLine();
+      new newGame(input);
+    }
   }
 }
