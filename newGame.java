@@ -8,14 +8,11 @@ public class newGame
   public void doDeath(String game)
   {
     String newGame = game;
-    if(parseInt(game.substring(0, 4)) >= 0 || parseInt(game.substring(0,4)) <= 0)
-    {
-      System.out.println("Error, improper code format!");
-    }
-    else
+    try
     {
       newGame = game.substring(3, 4) + game.substring(0, 3) + game.substring(4, -1);
       System.out.println(newGame);
     }
+    catch(NumberFormatException e){System.out.println("Error, improper code format!");}
   }
 }
